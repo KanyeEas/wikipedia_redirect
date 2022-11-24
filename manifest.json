@@ -1,0 +1,25 @@
+{
+    "name": "Redirect Wikipedia",
+    "description": "Redirect wikipedia from mobile to desktop",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_icon": "wiki_icon.png"
+    },
+
+    "declarative_net_request": {
+        "rule_resources": [{
+            "id": "rule",
+            "enabled": true,
+            "path": "rule.json"
+        }]
+    },
+    "permissions": [
+        "declarativeNetRequestWithHostAccess",
+        "declarativeNetRequestFeedback"
+    ],
+    "host_permissions": [
+        "https://zh.m.wikipedia.org/*",
+        "https://zh.wikipedia.org/*"
+    ]
+}

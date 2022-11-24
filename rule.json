@@ -1,0 +1,16 @@
+[
+    {
+        "id" : 1,
+        "priority": 1,
+        "action" : { 
+            "type" : "redirect",
+            "redirect" : {
+                "regexSubstitution": "https://zh.wikipedia.org/zh-cn/"
+            }
+        },
+        "condition" : {
+            "regexFilter": "^https://zh.*.wikipedia.org/.*/",
+            "resourceTypes": ["main_frame"]
+        }
+    }
+]
