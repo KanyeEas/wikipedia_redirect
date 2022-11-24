@@ -9,7 +9,7 @@
             }
         },
         "condition" : {
-            "regexFilter": "https?://zh\.(?:m\.)?wikipedia.org/zh[a-zA-Z\-]*?/",
+            "regexFilter": "https?://zh\\.(?:m\\.)?wikipedia.org/zh[\\w\\-]*?/",
             "resourceTypes": ["main_frame"]
         }
     }
