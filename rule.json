@@ -5,11 +5,11 @@
         "action" : { 
             "type" : "redirect",
             "redirect" : {
-                "regexSubstitution": "https://zh.wikipedia.org/zh-cn/"
+                "regexSubstitution": "https://zh.wikipedia.org/wiki/"
             }
         },
         "condition" : {
-            "regexFilter": "^https://zh.*.wikipedia.org/.*/",
+            "regexFilter": "https?://zh\\.(?:m\\.)?wikipedia.org/zh[\\w\\-]*?/",
             "resourceTypes": ["main_frame"]
         }
     }
